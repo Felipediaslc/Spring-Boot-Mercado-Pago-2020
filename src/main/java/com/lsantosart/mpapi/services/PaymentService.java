@@ -14,7 +14,7 @@ public class PaymentService {
 
     public Payment pay(Customer customer) throws MPConfException {
 
-        MercadoPago.SDK.setAccessToken("TEST-3725464736343104-092413-a7445fed10f1bded18db05de685c687d-415834449");
+        MercadoPago.SDK.setAccessToken("YOUR_ACCESS_TOKEN");
 
         Payment payment = new Payment();
         payment.setTransactionAmount(123f)
