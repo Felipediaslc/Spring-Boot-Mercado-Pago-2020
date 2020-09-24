@@ -13,7 +13,7 @@
     <div class="container d-flex justify-content-center">
         <div class="my-3">
             <h1 class="p-3 bg-light my-3 border border-info">Teste de integração</h1>
-            <form action="#" th:action="${/pay}" method="POST">
+            <form action="#" th:action="@{/pay}" method="POST">
                 <script src="https://www.mercadopago.com.br/integrations/v1/web-tokenize-checkout.js" data-public-key="TEST-3ed0acb8-65bf-4ca9-8ff2-7da841d934b5" data-transaction-amount="100.00">
                 </script>
             </form>
