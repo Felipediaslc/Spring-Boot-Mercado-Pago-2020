@@ -27,7 +27,7 @@ public class GeneralController {
     // Get payment request
     @PostMapping("/pay")
     public ModelAndView pay() {
-
+        System.out.println("Chegou...");
         // Configura credenciais
         try {
             MercadoPago.SDK.setAccessToken("TEST-3725464736343104-092413-a7445fed10f1bded18db05de685c687d-415834449");
