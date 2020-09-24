@@ -11,6 +11,8 @@ frequencia.
 3 - Abra o Pg Admin e crie um banco chamado db_mp.
 4 - Clique em run, na classe principal do projeto ou clique no "play".
 
+Você pode testar esta aplicação em produção em:
+https://mercadopagoapit.herokuapp.com
 
 A documentação completa deste checkout pode ser obtida em: 
 https://www.mercadopago.com.br/developers/pt/guides/online-payments/web-tokenize-checkout/introduction/
