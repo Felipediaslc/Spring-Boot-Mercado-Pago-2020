@@ -25,7 +25,6 @@ public class GeneralController {
     @GetMapping("/")
     public ModelAndView form() {
         ModelAndView mv = new ModelAndView("index");
-        mv.addObject("preference_id", "252");
         return mv;
     }
 
