@@ -17,7 +17,7 @@ import org.springframework.stereotype.Service;
 @Service
 public class CheckoutService {
     
-    private String accessToken = "TEST-3725464736343104-092413-a7445fed10f1bded18db05de685c687d-415834449";
+    private String accessToken = "YOUR_ACCESS_TOKEN";
 
     public Preference checkout() throws MPConfException {
 

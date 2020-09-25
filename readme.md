@@ -1,7 +1,5 @@
-#Implementação básica do checkout fixo do mercado pago
+# Implementação básica do checkout fixo do mercado pago
 
-
-#Este é apenas um teste
 
 Use as credenciais abaixo para simular um pagamento
 
@@ -14,7 +12,7 @@ Validade: 11/25
 CPF: Gere um no: https://www.4devs.com.br/gerador_de_cpf
 
 
-Como utilizar este repositório: 
+# Como utilizar este repositório: 
 
 1 - Baixe este projeto ou clone-o para sua pasta local.
 2 - Abra-o com o VsCode ou IDE de sua preferencia.
