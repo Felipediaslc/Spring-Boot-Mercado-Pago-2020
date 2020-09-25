@@ -11,21 +11,26 @@
 <body>
     <div class="container">
         <div class="flex-column my-3 d-flex justify-content-center col-md-12">
-            <h1 class="p-3 bg-light my-3 text-center">Iphone 8</h1>
-            <div class="text-center my-2">
-                <img src="img/iphone.jpg" alt="Iphone 8" class="img-thumbnail" style="max-width: 200px;">
-            </div>
-            <div class="my-3">
+            <h1 class="p-3 my-3 text-center">Mercado pago integração</h1>
+            
+            <div class="my-3 card p-3">
+                <div class="text-center my-2">
+                    <img src="img/cart.png" alt="Iphone 8" class="" style="max-width: 200px;">
+                </div>
                 <span>
-                    Adquira já este lindo Iphone com <b>20%</b> de desconto!!!
+                    Envio: <b th:text="${preference.shipments.cost}"></b>
                 </span>
                 <hr>
-                <h4>R$ 1.800 Aproveite!!!</h4>
+                <span>
+                    Total: <b th:text="${total}"></b>
+                </span>
+                <form class="my-3" action="/processar_pagamento" method="POST">
+                    <script src="https://www.mercadopago.com.br/integrations/v1/web-payment-checkout.js"
+                        th:data-preference-id="${preference.id}">
+                    </script>
+                </form>
             </div>
-            <form action="#" th:action="@{/pay}" method="POST" class="d-flex justify-content-center my-2">
-                <script src="https://www.mercadopago.com.br/integrations/v1/web-tokenize-checkout.js" data-public-key="YOUR_PUBLIC_KEY" data-transaction-amount="1850.00" data-summary-product="1800" data-summary-shipping="50" data-summary-product-label="Iphone" data-button-label="Comprar">
-                </script>
-            </form>
+
         </div>
         <div class="my-3 d-flex justify-content-center">
             <div class="jumbotron jumbotron-fluid">
@@ -35,13 +40,11 @@
                     <p class="lead">Numero do cartão: 5031 4332 1540 6351</p>
                     <p class="lead">CVV: 123</p>
                     <p class="lead">Validade: 11/25</p>
-                    <p class="lead">CPF: 711.695.950-57</p>
+                    <p class="lead">CPF: 71169595057</p>
                 </div>
             </div>
         </div>
     </div>
-
-
 
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
