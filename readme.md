@@ -26,6 +26,6 @@ Você pode testar esta aplicação em produção em:
 https://mercadopagoapit.herokuapp.com
 
 A documentação completa deste checkout pode ser obtida em: 
-https://www.mercadopago.com.br/developers/pt/guides/online-payments/web-tokenize-checkout/introduction/
+https://www.mercadopago.com.br/developers/pt/guides/online-payments/checkout-pro/introduction/
 
 Esta implementação foi feita por Lsantos-Art @dev
